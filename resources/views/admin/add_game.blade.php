@@ -5,7 +5,7 @@
             <div class="col-lg-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            Thêm Sách
+                            Thêm Game
                         </header>
                         <div class="panel-body">
                            
@@ -14,7 +14,7 @@
                                         {{ csrf_field() }}
                                
                                  <div class="form-group">
-                                    <label for="exampleInputEmail">Tên Sách </label>
+                                    <label for="exampleInputEmail">Tên Game </label>
                                     <input type="text"  name="Game_name" class="form-control" id="exampleInputEmail" >
                                 </div>
                                  <div class="form-group">
@@ -38,7 +38,7 @@
                                     <input type="text"  name="Game_status" class="form-control" id="exampleInputEmail" >
                                 </div>
                                 <div class="form-group">
-                                     <label for="exampleInputEmail">Thể Loại Sách </label>
+                                     <label for="exampleInputEmail">Thể Loại Game </label>
                                    <select   name="cate"  class="input-sm form-control input-sm m-bot15">
                                        @foreach($cate_game as $key=>$cate)
                                          <option value="{{$cate->category_id}}">{{$cate->category_name}}</option>
@@ -57,7 +57,7 @@
                               
                                
                                
-                                <button type="submit" name="add_game" class="btn btn-info">Thêm Sách</button>
+                                <button type="submit" name="add_game" class="btn btn-info">Thêm Game</button>
                             </form>
                             </div>
 
