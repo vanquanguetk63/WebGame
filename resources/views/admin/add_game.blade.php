@@ -36,8 +36,8 @@
                                 <div class="form-group">
                                     <label for="exampleInputEmail">Trạng Thái </label>
                                     <select   name="cate"  class="input-sm form-control input-sm m-bot15">
-                                        <option>Còn hàng</option>
-                                        <option>Hết hàng</option>
+                                       
+                                        <input type="file"  name="Game_image" class="form-control" id="exampleInputEmail" >
                                     </select>
                                     
                                 </div>
