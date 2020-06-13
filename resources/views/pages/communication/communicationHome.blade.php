@@ -385,7 +385,7 @@
              @foreach( $NPH_by_id as $key => $game)   
                 <div class="col-md-6">
                     <div class="nk-product-cat">
-                        <a class="nk-product-image" href="{{URL::to('/chi-tiet-san-pham/'.$game->Game_id}}">
+                        <a class="nk-product-image" href="{{URL::to('/chi-tiet-san-pham/'.$game->Game_id)}}">
                             <img src="'https://webgamebtl.herokuapp.com/public/uploadimage/'.$game->Game_image" height="350" width="200" alt="" />
                         </a>
                         <div class="nk-product-cont">
