@@ -426,16 +426,18 @@
     </div>
 </div>
 
-<h4 class="nk-widget-title"><span><span class="text-main-1">Thể Loại</span> </span></h4>
 <div class="nk-widget nk-widget-highlighted">
-    @foreach($cate_game as $key => $cate)
-    <div class="nk-widget-content">
-        <ul class="nk-widget-categories">
-            <li><a href="{{URL::to('/the-loai/'.$cate->category_id)}}">{{$cate->category_name}}</a></li>
+    <h4 class="nk-widget-title"><span><span class="text-main-1">Thể Loại</span> </span></h4>
+    <div class="nk-widget nk-widget-highlighted">
+        @foreach($cate_game as $key => $cate)
+        <div class="nk-widget-content">
+            <ul class="nk-widget-categories">
+                <li><a href="{{URL::to('/the-loai/'.$cate->category_id)}}">{{$cate->category_name}}</a></li>
             
-        </ul>
+            </ul>
+        </div>
+        @endforeach
     </div>
-    @endforeach
 </div>
 
 
