@@ -111,18 +111,6 @@
         </div>
     </div>
 </div>
-<!-- END: Top Contacts -->
-
-    
-
-    <!--
-        START: Navbar
-
-        Additional Classes:
-            .nk-navbar-sticky
-            .nk-navbar-transparent
-            .nk-navbar-autohide
-    -->
     <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-autohide">
         <div class="container">
             <div class="nk-nav-table">
