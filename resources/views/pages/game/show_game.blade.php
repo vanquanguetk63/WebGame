@@ -346,7 +346,7 @@
                             <div class="nk-gallery-item-box">
                                 <a href="https://webgamebtl.herokuapp.com/public/uploadimage/'.$showgame->Game_image)}}" class="nk-gallery-item" data-size="1200x554">
                                     <div class="nk-gallery-item-overlay"><span class="ion-eye"></span></div>
-                                    <img src="https://webgamebtl.herokuapp.com/public/uploadimage/'.$showgame->Game_image)}}" alt="">
+                                    <img src="public/uploadimage/'.$showgame->Game_image)}}" alt="">
                                 </a>
                             </div>
 
