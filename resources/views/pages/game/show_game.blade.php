@@ -332,9 +332,9 @@
                         
                         <div class="nk-popup-gallery">
                             <div class="nk-gallery-item-box">
-                                <a href="https://webgamebtl.herokuapp.com/public/uploadimage/'.$showgame->Game_image" class="nk-gallery-item" data-size="1200x554">
+                                <a href="'https://webgamebtl.herokuapp.com/public/uploadimage/'$showgame->Game_image" class="nk-gallery-item" data-size="1200x554">
                                     <div class="nk-gallery-item-overlay"><span class="ion-eye"></span></div>
-                                    <img src="https://webgamebtl.herokuapp.com/public/uploadimage/'.$showgame->Game_image" alt="">
+                                    <img src="'https://webgamebtl.herokuapp.com/public/uploadimage/'.$showgame->Game_image" alt="">
                                 </a>
                             </div>
 
@@ -543,7 +543,7 @@
                             <div class="col-lg-6">
                                 <div class="nk-widget-post-2">
                                     <a href="{{URL::to('/chi-tiet-san-pham/'.$newgame->Game_id)}}" class="nk-post-image">
-                                         <img src="'https://webgamebtl.herokuapp.com/public/uploadimage/'.$newgame->Game_image" height="350" width="200" alt="" />
+                                         <img src="https://webgamebtl.herokuapp.com/public/uploadimage/{{$newgame->Game_image}}" height="350" width="200" alt="" />
                                     </a>
                                     <div class="nk-post-title"><a href="{{URL::to('/chi-tiet-san-pham/'.$newgame->Game_id)}}">{{$newgame->Game_name}}</a></div>
                                     
