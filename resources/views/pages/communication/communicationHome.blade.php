@@ -141,17 +141,6 @@
                 
             </a>
         </li>
-       <!--  <li>
-            <a href="gallery.html">
-                Thư Viện Ảnh
-                
-            </a>
-        </li> -->
-        
-
-
-
-
 
 
 
@@ -386,7 +375,7 @@
                 <div class="col-md-6">
                     <div class="nk-product-cat">
                         <a class="nk-product-image" href="{{URL::to('/chi-tiet-san-pham/'.$game->Game_id)}}">
-                            <img src="'https://webgamebtl.herokuapp.com/public/uploadimage/'.$game->Game_image" height="350" width="200" alt="" />
+                            <img src="https://webgamebtl.herokuapp.com/public/uploadimage/{{$game->Game_image}}" height="350" width="200" alt="" />
                         </a>
                         <div class="nk-product-cont">
                             <h3 class="nk-product-title h5"><a href="{{URL::to('/chi-tiet-san-pham/'.$game->Game_id)}}">{{$game->Game_name}}</a></h3>
@@ -428,8 +417,8 @@
     </div>
 </div>
 <div class="nk-widget nk-widget-highlighted">
-    @foreach($cate_game as $key => $cate)
     <h4 class="nk-widget-title"><span><span class="text-main-1">Thể Loại</span> </span></h4>
+    @foreach($cate_game as $key => $cate)
     <div class="nk-widget-content">
         <ul class="nk-widget-categories">
             <li><a href="{{URL::to('/the-loai/'.$cate->category_id)}}">{{$cate->category_name}}</a></li>
