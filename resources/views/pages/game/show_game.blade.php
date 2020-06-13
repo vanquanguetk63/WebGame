@@ -479,8 +479,8 @@
     </div>
 </div>
 <div class="nk-widget nk-widget-highlighted">
-     @foreach($cate_game as $key => $cate)
     <h4 class="nk-widget-title"><span><span class="text-main-1">Thể Loại</span></span></h4>
+    @foreach($cate_game as $key => $cate)
     <div class="nk-widget-content">
         <ul class="nk-widget-categories">
              <li><a href="{{URL::to('/the-loai/'.$cate->category_id)}}">{{$cate->category_name}}</a></li>
@@ -497,8 +497,8 @@
     <div class="nk-widget-content">
         @foreach($price_game as $key => $pricegame)
         <div class="nk-widget-post">
-            <a href="{{URL::to('/chi-tiet-san-pham/'.$pricegame->Game_id}}" class="nk-post-image">
-                <img src="https://webgamebtl.herokuapp.com/public/uploadimage/{{$pricegame->Game_image}}" height="350" width="200" alt="" />
+            <a href="{{URL::to('/chi-tiet-san-pham/'.$pricegame->Game_id)}}" class="nk-post-image">
+                <img src="{{asset('public/uploadimage/'.$pricegame->Game_image)}}" height="350" width="200" alt="" />
             </a>
             <h3 class="nk-post-title"><a href="{{URL::to('/chi-tiet-san-pham/'.$pricegame->Game_id)}}">{{$pricegame->Game_name}}</a></h3>
             <div class="nk-product-rating" data-rating="4"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="far fa-star"></i></div>
@@ -508,6 +508,7 @@
         
        
         
+       
         
     </div>
 </div>
