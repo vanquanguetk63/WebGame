@@ -35,10 +35,10 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail">Trạng Thái </label>
-                                    <input type="file"  name="Game_status" class="form-control" id="exampleInputEmail" >
-                                    
-                                    
+                                    <input type="text"  name="Game_status" class="form-control" id="exampleInputEmail" >
                                 </div>
+                                    
+                            
                                 <div class="form-group">
                                      <label for="exampleInputEmail">Thể Loại Game </label>
                                    <select   name="cate"  class="input-sm form-control input-sm m-bot15">
