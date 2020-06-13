@@ -33,14 +33,12 @@
                                     <label for="exampleInputEmail">Ảnh </label>
                                     <input type="file"  name="Game_image" class="form-control" id="exampleInputEmail" >
                                 </div>
-                                <div class="form-group">
+                                 <div class="form-group">
                                     <label for="exampleInputEmail">Trạng Thái </label>
                                     <input type="text"  name="Game_status" class="form-control" id="exampleInputEmail" >
                                 </div>
-                                    
-                            
                                 <div class="form-group">
-                                     <label for="exampleInputEmail">Thể Loại Game </label>
+                                     <label for="exampleInputEmail">Thể Loại Sách </label>
                                    <select   name="cate"  class="input-sm form-control input-sm m-bot15">
                                        @foreach($cate_game as $key=>$cate)
                                          <option value="{{$cate->category_id}}">{{$cate->category_name}}</option>
@@ -59,7 +57,7 @@
                               
                                
                                
-                                <button type="submit" name="add_game" class="btn btn-info">Thêm Game</button>
+                                <button type="submit" name="add_game" class="btn btn-info">Thêm Sách</button>
                             </form>
                             </div>
 
