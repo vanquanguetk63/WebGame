@@ -360,7 +360,7 @@
                         <tr>
                             <td class="nk-product-cart-thumb">
                                 <a href="{{URL::to('/chi-tiet-san-pham/'.$v_content->Game_id)}}" class="nk-image-box-1 nk-post-image">
-                                    <img src="{{('public/uploadimage/'.$v_content->options->image)}}" alt="However, I have reason" width="115">
+                                    <img src="{{('https://webgamebtl.herokuapp.com/public/uploadimage/'.$v_content->options->image)}}" alt="However, I have reason" width="115">
                                 </a>
                             </td>
                             <td class="nk-product-cart-title">
@@ -494,7 +494,7 @@
                             <div class="col-lg-6">
                                 <div class="nk-widget-post-2">
                                     <a href="{{URL::to('/chi-tiet-san-pham/'.$newgame->Game_id)}}" class="nk-post-image">
-                                         <img src="https://webgamebtl.herokuapp.com/public/uploadimage/'.$newgame->Game_image)}}" height="350" width="200" alt="" />
+                                         <img src="https://webgamebtl.herokuapp.com/public/uploadimage/{{$newgame->Game_image}}" height="350" width="200" alt="" />
                                     </a>
                                     <div class="nk-post-title"><a href="{{URL::to('/chi-tiet-san-pham/'.$newgame->Game_id)}}">{{$newgame->Game_name}}</a></div>
                                     

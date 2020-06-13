@@ -359,7 +359,7 @@
                         <tr>
                             <td class="nk-product-cart-thumb">
                                 <a href="{{URL::to('/chi-tiet-san-pham/'.$o_by_id->Game_id)}}" class="nk-image-box-1 nk-post-image">
-                                    <img src="https://webgamebtl.herokuapp.com/public/uploadimage/'.$o_by_id->Game_image)}}" alt="However, I have reason" width="115">
+                                    <img src="https://webgamebtl.herokuapp.com/public/uploadimage/{{$o_by_id->Game_image}}" alt="However, I have reason" width="115">
                                 </a>
                             </td>
                             <td class="nk-product-cart-title">
