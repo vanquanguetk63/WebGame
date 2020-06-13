@@ -5,7 +5,7 @@
             <div class="col-lg-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            Thêm Game
+                            Thêm Sách
                         </header>
                         <div class="panel-body">
                            
@@ -14,31 +14,31 @@
                                         {{ csrf_field() }}
                                
                                  <div class="form-group">
-                                    <label for="exampleInputEmail">Tên Game </label>
-                                    <input type="text"  name="Book_name" class="form-control" id="exampleInputEmail" >
+                                    <label for="exampleInputEmail">Tên Sách </label>
+                                    <input type="text"  name="Game_name" class="form-control" id="exampleInputEmail" >
                                 </div>
                                  <div class="form-group">
                                     <label for="exampleInputEmail">Mô Tả </label>
-                                    <input type="text"  name="Book_desc" class="form-control" id="exampleInputEmail" >
+                                    <input type="text"  name="Game_desc" class="form-control" id="exampleInputEmail" >
                                 </div>
                                    <div class="form-group">
                                     <label for="exampleInputPassword1">Nội Dung </label>
-                                    <textarea style="resize: none" rows="8" class="form-control" name="Book_content"id="exampleInputPassword1" ></textarea>
+                                    <textarea style="resize: none" rows="8" class="form-control" name="Game_content"id="exampleInputPassword1" ></textarea>
                                 </div>
                                  <div class="form-group">
                                     <label for="exampleInputEmail">Giá </label>
-                                    <input type="text"  name="Book_price" class="form-control" id="exampleInputEmail" >
+                                    <input type="text"  name="Game_price" class="form-control" id="exampleInputEmail" >
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail">Ảnh </label>
-                                    <input type="file"  name="Book_image" class="form-control" id="exampleInputEmail" >
+                                    <input type="file"  name="Game_image" class="form-control" id="exampleInputEmail" >
                                 </div>
                                  <div class="form-group">
                                     <label for="exampleInputEmail">Trạng Thái </label>
-                                    <input type="text"  name="Book_status" class="form-control" id="exampleInputEmail" >
+                                    <input type="text"  name="Game_status" class="form-control" id="exampleInputEmail" >
                                 </div>
                                 <div class="form-group">
-                                     <label for="exampleInputEmail">Thể Loại Game </label>
+                                     <label for="exampleInputEmail">Thể Loại Sách </label>
                                    <select   name="cate"  class="input-sm form-control input-sm m-bot15">
                                        @foreach($cate_game as $key=>$cate)
                                          <option value="{{$cate->category_id}}">{{$cate->category_name}}</option>
@@ -57,7 +57,7 @@
                               
                                
                                
-                                <button type="submit" name="add_game" class="btn btn-info">Thêm Game</button>
+                                <button type="submit" name="add_game" class="btn btn-info">Thêm Sách</button>
                             </form>
                             </div>
 

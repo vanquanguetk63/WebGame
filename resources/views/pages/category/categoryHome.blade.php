@@ -428,7 +428,6 @@
 
 <h4 class="nk-widget-title"><span><span class="text-main-1">Thể Loại</span> </span></h4>
 <div class="nk-widget nk-widget-highlighted">
-    
     @foreach($cate_game as $key => $cate)
     <div class="nk-widget-content">
         <ul class="nk-widget-categories">
