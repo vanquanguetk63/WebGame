@@ -387,7 +387,7 @@
             <div><div class="pl-5 pr-5">
                 <div class="nk-product-cat-3">
                     <a class="nk-product-image" href="{{URL::to('/chi-tiet-san-pham/'.$random->Game_id)}}">
-                        <img src="https://webgamebtl.herokuapp.com/public/uploadimage/'.$random->Game_image" height="350" width="200" alt="" />
+                        <img src="'https://webgamebtl.herokuapp.com/public/uploadimage/'.$random->Game_image" height="350" width="200" alt="" />
                     </a>
                     <div class="nk-product-cont">
                         <div class="nk-gap-1"></div>
@@ -414,7 +414,7 @@
         <div class="col-lg-6">
             <div class="nk-product-cat-2">
                 <a class="nk-product-image" href="{{URL::to('/chi-tiet-san-pham/'.$newgame->Game_id)}}">
-                    <img src="https://webgamebtl.herokuapp.com/public/uploadimage/'.$newgame->Game_image" height="350" width="200" alt="" />
+                    <img src="'https://webgamebtl.herokuapp.com/public/uploadimage/'.$newgame->Game_image" height="350" width="200" alt="" />
                 </a>
                 <div class="nk-product-cont">
                     <h3 class="nk-product-title h5"><a href="{{URL::to('/chi-tiet-san-pham/'.$newgame->Game_id)}}">{{$newgame->Game_name}}</a></h3>
@@ -443,7 +443,7 @@
         <div class="col-lg-4 col-md-6">
             <div class="nk-product-cat">
                 <a class="nk-product-image" href="{{URL::to('/chi-tiet-san-pham/'.$pricegame->Game_id)}}">
-                    <img src="https://webgamebtl.herokuapp.com/public/uploadimage/'.$pricegame->Game_image" height="350" width="200" alt="" />
+                    <img src="'https://webgamebtl.herokuapp.com/public/uploadimage/'.$pricegame->Game_image" height="350" width="200" alt="" />
                 </a>
                 <div class="nk-product-cont">
                     <h3 class="nk-product-title h5"><a href="{{URL::to('/chi-tiet-san-pham/'.$pricegame->Game_id)}}">{{$pricegame->Game_name}}</a></h3>

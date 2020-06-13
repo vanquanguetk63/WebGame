@@ -40,7 +40,7 @@
           <tr>
             <td><i></i></td>
             <td>{{$value->Game_name}}</td>
-            <td><image src="https://webgamebtl.herokuapp.com/public/uploadimage/'.$value->Game_image)}}" height="300" width="200"></td>
+            <td><image src="'https://webgamebtl.herokuapp.com/public/uploadimage/'.$value->Game_image)}}" height="300" width="200"></td>
             <td>{{$value->Game_quantity}}</td>
             <td>{{number_format($value->Game_price).'VNĐ'}}</td>
             <td>
