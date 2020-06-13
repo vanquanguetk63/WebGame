@@ -46,9 +46,9 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', 'remotemysql.com'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'elaravel'),
+            'database' => env('DB_DATABASE', 'Hyzfq3gqTH'),
             'username' => env('DB_USERNAME', 'Hyzfq3gqTH'),
             'password' => env('DB_PASSWORD', 'i0goBY3zLO'),
             'unix_socket' => env('DB_SOCKET', ''),
