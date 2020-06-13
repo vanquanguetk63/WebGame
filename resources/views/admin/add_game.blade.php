@@ -35,9 +35,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail">Trạng Thái </label>
-                                    
-                                       
-                                        <input type="file"  name="Game_image" class="form-control" id="exampleInputEmail" >
+                                    <input type="file"  name="Game_status" class="form-control" id="exampleInputEmail" >
                                     
                                     
                                 </div>
