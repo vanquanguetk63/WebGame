@@ -12,9 +12,9 @@ Session_start();
 class GameController extends Controller
 {
     public function add_game(){
-    		$cate_game = DB::table('tbl_category_product')->orderby('category_id')->get();
-    		$NPH_game = DB::table('table_communication')->orderby('communication_id')->get();
-    		return view('admin.add_game')->with('cate_game',$cate_game)->with('NPH_game',$NPH_game);
+            $cate_game = DB::table('tbl_category_product')->orderby('category_id')->get();
+            $NPH_game = DB::table('table_communication')->orderby('communication_id')->get();
+            return view('admin.add_game')->with('cate_game',$cate_game)->with('NPH_game',$NPH_game);
     }
 
     public function all_game(){
@@ -40,45 +40,45 @@ class GameController extends Controller
 
 
     public function save_game(Request $request){
-    		$data = array();
-    		$data['Game_name'] = $request->Game_name;
-    		$data['Game_desc'] = $request->Game_desc;
-    		$data['Game_content'] = $request->Game_content;
-    		$data['Game_price'] = $request->Game_price;
-    		$data['Game_status'] = $request->Game_status;
-    		$data['category_id'] = $request->cate;
-    		$data['communication_id'] = $request->NPH_game;
+            $data = array();
+            $data['Game_name'] = $request->Game_name;
+            $data['Game_desc'] = $request->Game_desc;
+            $data['Game_content'] = $request->Game_content;
+            $data['Game_price'] = $request->Game_price;
+            $data['Game_status'] = $request->Game_status;
+            $data['category_id'] = $request->cate;
+            $data['communication_id'] = $request->NPH_game;
            
             
             
-    		$get_image = $request->file('Game_image');
+            $get_image = $request->file('Game_image');
 
-    		if ($get_image) {
-    		$get_name_image = $get_image->getClientOriginalName();
+            if ($get_image) {
+            $get_name_image = $get_image->getClientOriginalName();
             $name_image = current(explode('.',$get_name_image));
             $new_image =  $name_image.rand(0,99).'.'.$get_image->getClientOriginalExtension();
             $get_image->move('public/uploadimage',$new_image);
             $data['Game_image'] = $new_image;
-         	DB::table('table_game')->insert($data);
+            DB::table('table_game')->insert($data);
             return Redirect::to('all-game');
-    		}
-    		$data['Game_image'] = '';
-    			DB::table('table_game')->insert($data);
-    			return Redirect::to('all-game');
-    	
+            }
+            $data['Game_image'] = '';
+                DB::table('table_game')->insert($data);
+                return Redirect::to('all-game');
+        
     }
 
     public function edit_game($Game_id){
 
-    	$cate_game = DB::table('tbl_category_product')->orderby('category_id')->get();
-    	$NPH_game = DB::table('table_communication')->orderby('communication_id')->get();
-    	$edit_game = DB::table('table_game')->where('Game_id',$Game_id)->get();
+        $cate_game = DB::table('tbl_category_product')->orderby('category_id')->get();
+        $NPH_game = DB::table('table_communication')->orderby('communication_id')->get();
+        $edit_game = DB::table('table_game')->where('Game_id',$Game_id)->get();
         $manager_game = view('admin.edit_game')->with('edit_game',$edit_game)->with('cate_game',$cate_game)->with('NPH_game',$NPH_game);
         return view('admin_layout')->with('admin.edit_game',$manager_game);
     }
 
     public function update_game($Game_id,Request $request){
-    		 $data = array();
+             $data = array();
             $data['Game_name'] = $request->Game_name;
             $data['Game_desc'] = $request->Game_desc;
             $data['Game_content'] = $request->Game_content;
