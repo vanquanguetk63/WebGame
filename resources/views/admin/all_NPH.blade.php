@@ -31,7 +31,7 @@
           <tr>
             <td><!-- <label class="i-checks m-b-none"><input type="checkbox" name="post[]"> --><i></i><!-- </label> --></td>
             <td>{{ $NPH->communication_name }}</td>
-            <td><image src="public/uploadimage/{{$NPH->communication_image}}" height="300" width="200"></td>
+            <td><image src="https://webgamebtl.herokuapp.com/public/uploadimage/{{$NPH->communication_image}}" height="300" width="200"></td>
           
           <td>
               <a href="{{URL::to('/edit-NPH/'.$NPH->communication_id)}}" class="active styling-edit" ui-toggle-class="">

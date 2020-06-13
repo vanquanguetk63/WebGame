@@ -32,7 +32,7 @@
                                 <div class="form-group">
                                     <label for="exampleInputEmail">Ảnh </label>
                                     <input type="file"  name="Game_image" class="form-control" id="exampleInputEmail"  >
-                                    <img src="{{URL::to('public/uploadimage/'.$game->Game_image)}}"height="150" width="150">
+                                    <img src="{{URL::to('https://webgamebtl.herokuapp.com/public/uploadimage/'.$game->Game_image)}}"height="150" width="150">
                                 </div>
                                  <div class="form-group">
                                     <label for="exampleInputEmail">Trạng Thái </label>

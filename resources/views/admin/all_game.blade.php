@@ -46,7 +46,7 @@
             <td>{{ $game->Game_desc}}</td>
             <td>{{ $game->Game_content}}</td>
             <td>{{ $game->Game_price}}</td>
-            <td><image src="public/uploadimage/{{$game->Game_image}}" height="300" width="200"></td>
+            <td><image src="https://webgamebtl.herokuapp.com/public/uploadimage/{{$game->Game_image}}" height="300" width="200"></td>
             <td>{{ $game->Game_status}}</td>
             <td>{{ $game->category_name}}</td>
             <td>{{ $game->communication_name}}</td>

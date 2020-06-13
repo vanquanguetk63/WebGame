@@ -12,7 +12,7 @@
     <meta name="keywords" content="game, gaming, template, HTML template, responsive, Bootstrap, premium">
     <meta name="author" content="_nK">
 
-    <link rel="icon" type="image/png" href="{{asset('public/assets/images/favicon.png')}}">
+    <link rel="icon" type="image/png" href="https://webgamebtl.herokuapp.com/public/assets/images/favicon.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,38 +22,38 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7cOpen+Sans:400,700" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="{{asset('public/assets/vendor/bootstrap/dist/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="https://webgamebtl.herokuapp.com/public/assets/vendor/bootstrap/dist/css/bootstrap.min.css">
 
     <!-- FontAwesome -->
-    <script defer src="{{asset('public/assets/vendor/fontawesome-free/js/all.js')}}"></script>
-    <script defer src="{{asset('public/assets/vendor/fontawesome-free/js/v4-shims.js')}}"></script>
+    <script defer src="https://webgamebtl.herokuapp.com/public/assets/vendor/fontawesome-free/js/all.js"></script>
+    <script defer src="https://webgamebtl.herokuapp.com/public/assets/vendor/fontawesome-free/js/v4-shims.js"></script>
 
     <!-- IonIcons -->
-    <link rel="stylesheet" href="{{asset('public/assets/vendor/ionicons/css/ionicons.min.css')}}">
+    <link rel="stylesheet" href="https://webgamebtl.herokuapp.com/public/assets/vendor/ionicons/css/ionicons.min.css">
 
     <!-- Flickity -->
-    <link rel="stylesheet" href="{{asset('public/assets/vendor/flickity/dist/flickity.min.css')}}">
+    <link rel="stylesheet" href="https://webgamebtl.herokuapp.com/public/assets/vendor/flickity/dist/flickity.min.css">
 
     <!-- Photoswipe -->
-    <link rel="stylesheet" type="text/css" href="{{asset('public/assets/vendor/photoswipe/dist/photoswipe.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('public/assets/vendor/photoswipe/dist/default-skin/default-skin.css')}}">
+    <link rel="stylesheet" type="text/css" href="https://webgamebtl.herokuapp.com/public/assets/vendor/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" type="text/css" href="https://webgamebtl.herokuapp.com/public/assets/vendor/photoswipe/dist/default-skin/default-skin.css">
 
     <!-- Seiyria Bootstrap Slider -->
-    <link rel="stylesheet" href="{{asset('public/assets/vendor/bootstrap-slider/dist/css/bootstrap-slider.min.css')}}">
+    <link rel="stylesheet" href="https://webgamebtl.herokuapp.com/public/assets/vendor/bootstrap-slider/dist/css/bootstrap-slider.min.css">
 
     <!-- Summernote -->
-    <link rel="stylesheet" type="text/css" href="{{asset('public/assets/vendor/summernote/dist/summernote-bs4.css')}}">
+    <link rel="stylesheet" type="text/css" href="https://webgamebtl.herokuapp.com/public/assets/vendor/summernote/dist/summernote-bs4.css">
 
     <!-- GoodGames -->
-    <link rel="stylesheet" href="{{asset('public/assets/css/goodgames.css')}}">
+    <link rel="stylesheet" href="https://webgamebtl.herokuapp.com/public/assets/css/goodgames.css">
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="{{asset('public/assets/css/custom.css')}}">
+    <link rel="stylesheet" href="https://webgamebtl.herokuapp.com/public/assets/css/custom.css">
     
     <!-- END: Styles -->
 
     <!-- jQuery -->
-    <script src="{{asset('public/assets/vendor/jquery/dist/jquery.min.js')}}"></script>
+    <script src="https://webgamebtl.herokuapp.com/public/assets/vendor/jquery/dist/jquery.min.js"></script>
     
     
 </head>
@@ -128,7 +128,7 @@
             <div class="nk-nav-table">
                 
                 <a href="{{URL::to('/')}}" class="nk-nav-logo">
-                    <img src="{{asset('public/assets/images/logo.png')}}" alt="GoodGames" width="199">
+                    <img src="https://webgamebtl.herokuapp.com/public/assets/images/logo.png" alt="GoodGames" width="199">
                 </a>
                 
                 <ul class="nk-nav nk-nav-right d-none d-lg-table-cell" data-nav-mobile="#nk-nav-mobile">
@@ -470,8 +470,8 @@
 
       <!-- START: Page Background -->
 
-    <img class="nk-page-background-top" src="{{asset('public/assets/images/bg-top.png')}}" alt="">
-    <img class="nk-page-background-bottom" src="{{asset('public/assets/images/bg-bottom.png')}}" alt="">
+    <img class="nk-page-background-top" src="https://webgamebtl.herokuapp.com/public/assets/images/bg-top.png" alt="">
+    <img class="nk-page-background-bottom" src="https://webgamebtl.herokuapp.com/public/assets/images/bg-bottom.png" alt="">
 <!-- END: Page Background -->
     
 
@@ -512,64 +512,64 @@
 <!-- START: Scripts -->
 
 <!-- Object Fit Polyfill -->
-<script src="{{asset('public/assets/vendor/object-fit-images/dist/ofi.min.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/object-fit-images/dist/ofi.min.js"></script>
 
 <!-- GSAP -->
-<script src="{{asset('public/assets/vendor/gsap/src/minified/TweenMax.min.js')}}"></script>
-<script src="{{asset('public/assets/vendor/gsap/src/minified/plugins/ScrollToPlugin.min.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/gsap/src/minified/TweenMax.min.js"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
 
 <!-- Popper -->
-<script src="{{asset('public/assets/vendor/popper.js/dist/umd/popper.min.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/popper.js/dist/umd/popper.min.js"></script>
 
 <!-- Bootstrap -->
-<script src="{{asset('public/assets/vendor/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <!-- Sticky Kit -->
-<script src="{{asset('public/assets/vendor/sticky-kit/dist/sticky-kit.min.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/sticky-kit/dist/sticky-kit.min.js"></script>
 
 <!-- Jarallax -->
-<script src="{{asset('public/assets/vendor/jarallax/dist/jarallax.min.js')}}"></script>
-<script src="{{asset('public/assets/vendor/jarallax/dist/jarallax-video.min.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/jarallax/dist/jarallax.min.js"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/jarallax/dist/jarallax-video.min.js"></script>
 
 <!-- imagesLoaded -->
-<script src="{{asset('public/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 
 <!-- Flickity -->
-<script src="{{asset('public/assets/vendor/flickity/dist/flickity.pkgd.min.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/flickity/dist/flickity.pkgd.min.js"></script>
 
 <!-- Photoswipe -->
-<script src="{{asset('public/assets/vendor/photoswipe/dist/photoswipe.min.js')}}"></script>
-<script src="{{asset('public/assets/vendor/photoswipe/dist/photoswipe-ui-default.min.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/photoswipe/dist/photoswipe.min.js"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/photoswipe/dist/photoswipe-ui-default.min.js"></script>
 
 <!-- Jquery Validation -->
-<script src="{{asset('public/assets/vendor/jquery-validation/dist/jquery.validate.min.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
 
 <!-- Jquery Countdown + Moment -->
-<script src="{{asset('public/assets/vendor/jquery-countdown/dist/jquery.countdown.min.js')}}"></script>
-<script src="{{asset('public/assets/vendor/moment/min/moment.min.js')}}"></script>
-<script src="{{asset('public/assets/vendor/moment-timezone/builds/moment-timezone-with-data.min.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/jquery-countdown/dist/jquery.countdown.min.js"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/moment/min/moment.min.js"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/moment-timezone/builds/moment-timezone-with-data.min.js"></script>
 
 <!-- Hammer.js -->
-<script src="{{asset('public/assets/vendor/hammerjs/hammer.min.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/hammerjs/hammer.min.js"></script>
 
 <!-- NanoSroller -->
-<script src="{{asset('public/assets/vendor/nanoscroller/bin/javascripts/jquery.nanoscroller.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/nanoscroller/bin/javascripts/jquery.nanoscroller.js"></script>
 
 <!-- SoundManager2 -->
-<script src="{{asset('public/assets/vendor/soundmanager2/script/soundmanager2-nodebug-jsmin.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/soundmanager2/script/soundmanager2-nodebug-jsmin.js"></script>
 
 <!-- Seiyria Bootstrap Slider -->
-<script src="{{asset('public/assets/vendor/bootstrap-slider/dist/bootstrap-slider.min.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/bootstrap-slider/dist/bootstrap-slider.min.js"></script>
 
 <!-- Summernote -->
-<script src="{{asset('public/assets/vendor/summernote/dist/summernote-bs4.min.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/vendor/summernote/dist/summernote-bs4.min.js"></script>
 
 <!-- nK Share -->
-<script src="{{asset('public/assets/plugins/nk-share/nk-share.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/plugins/nk-share/nk-share.js"></script>
 
 <!-- GoodGames -->
-<script src="{{asset('public/assets/js/goodgames.min.js')}}"></script>
-<script src="{{asset('public/assets/js/goodgames-init.js')}}"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/js/goodgames.min.js"></script>
+<script src="https://webgamebtl.herokuapp.com/public/assets/js/goodgames-init.js"></script>
 <!-- END: Scripts -->
 
 
