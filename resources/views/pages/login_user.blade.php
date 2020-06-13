@@ -439,7 +439,7 @@
                 <form action="{{URL::to('/search-game')}}" class="nk-form nk-form-style-1" method="POST">
                     {{csrf_field()}}
                     <input type="text"  name="keywords_submit" class="form-control" placeholder="Nhập Từ Khóa" autofocus>
-                    <input type="submit" style="margin-top: 0 ; color: #000" name="search_book" class="btn btn-primary btn-sm" value="Tìm Kiếm">
+                    <input type="submit" style="margin-top: 0 ; color: #000" name="search_game" class="btn btn-primary btn-sm" value="Tìm Kiếm">
                 </form>
             </div>
         </div>

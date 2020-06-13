@@ -358,8 +358,8 @@
 						@foreach($order_by_id as $o_by_id)
                         <tr>
                             <td class="nk-product-cart-thumb">
-                                <a href="{{URL::to('/chi-tiet-san-pham/'.$o_by_id->Book_id)}}" class="nk-image-box-1 nk-post-image">
-                                    <img src="{{asset('public/uploadimage/'.$o_by_id->Book_image)}}" alt="However, I have reason" width="115">
+                                <a href="{{URL::to('/chi-tiet-san-pham/'.$o_by_id->Game_id)}}" class="nk-image-box-1 nk-post-image">
+                                    <img src="{{asset('public/uploadimage/'.$o_by_id->Game_image)}}" alt="However, I have reason" width="115">
                                 </a>
                             </td>
                             <td class="nk-product-cart-title">
@@ -367,26 +367,26 @@
                                 <div class="nk-gap-1"></div>
 
                                 <h2 class="nk-post-title h4">
-                                    <a href="{{URL::to('/chi-tiet-san-pham/'.$o_by_id->Book_id)}}">{{$o_by_id->Book_name}}</a>
+                                    <a href="{{URL::to('/chi-tiet-san-pham/'.$o_by_id->Game_id)}}">{{$o_by_id->Game_name}}</a>
                                 </h2>
                             </td>
                             <td class="nk-product-cart-price">
                                 <h5 class="h6">Giá:</h5>
                                 <div class="nk-gap-1"></div>
 
-                                <strong>{{number_format($o_by_id->Book_price).' '.'VNĐ'}}</strong>
+                                <strong>{{number_format($o_by_id->Game_price).' '.'VNĐ'}}</strong>
                             </td>
                             <td class="nk-product-cart-quantity">
                                 <h5 class="h6">Số Lượng:</h5>
                                 <div class="nk-gap-1"></div>
-                                <strong>{{$o_by_id->Book_quantity}}</strong>
+                                <strong>{{$o_by_id->Game_quantity}}</strong>
                             </td>
                             <td class="nk-product-cart-total">
                                 <h5 class="h6">Đơn Giá:</h5>
                                 <div class="nk-gap-1"></div>
 
                                 <?php
-										$subtotal = $o_by_id->Book_price * $o_by_id->Book_quantity;
+										$subtotal = $o_by_id->Game_price * $o_by_id->Game_quantity;
 										echo number_format($subtotal).' '.'VNĐ';
 									?>
                             </td>

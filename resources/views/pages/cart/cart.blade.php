@@ -359,7 +359,7 @@
 						@foreach($content as $v_content)
                         <tr>
                             <td class="nk-product-cart-thumb">
-                                <a href="{{URL::to('/chi-tiet-san-pham/'.$v_content->Book_id)}}" class="nk-image-box-1 nk-post-image">
+                                <a href="{{URL::to('/chi-tiet-san-pham/'.$v_content->Game_id)}}" class="nk-image-box-1 nk-post-image">
                                     <img src="{{('public/uploadimage/'.$v_content->options->image)}}" alt="However, I have reason" width="115">
                                 </a>
                             </td>
@@ -368,7 +368,7 @@
                                 <div class="nk-gap-1"></div>
 
                                 <h2 class="nk-post-title h4">
-                                    <a href="{{URL::to('/chi-tiet-san-pham/'.$v_content->Book_id)}}">{{$v_content->name}}</a>
+                                    <a href="{{URL::to('/chi-tiet-san-pham/'.$v_content->Game_id)}}">{{$v_content->name}}</a>
                                 </h2>
                             </td>
                             <td class="nk-product-cart-price">
@@ -493,10 +493,10 @@
                               @foreach($new_game as $key => $newgame)
                             <div class="col-lg-6">
                                 <div class="nk-widget-post-2">
-                                    <a href="{{URL::to('/chi-tiet-san-pham/'.$newgame->Book_id)}}" class="nk-post-image">
-                                         <img src="{{asset('public/uploadimage/'.$newgame->Book_image)}}" height="350" width="200" alt="" />
+                                    <a href="{{URL::to('/chi-tiet-san-pham/'.$newgame->Game_id)}}" class="nk-post-image">
+                                         <img src="{{asset('public/uploadimage/'.$newgame->Game_image)}}" height="350" width="200" alt="" />
                                     </a>
-                                    <div class="nk-post-title"><a href="{{URL::to('/chi-tiet-san-pham/'.$newgame->Book_id)}}">{{$newgame->Book_name}}</a></div>
+                                    <div class="nk-post-title"><a href="{{URL::to('/chi-tiet-san-pham/'.$newgame->Game_id)}}">{{$newgame->Game_name}}</a></div>
                                     
                                 </div>
                             </div>

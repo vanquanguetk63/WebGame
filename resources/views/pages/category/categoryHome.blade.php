@@ -357,7 +357,7 @@
     
     <div class="nk-gap-2"></div>
     <div class="row vertical-gap">
-        @foreach($NXB_book as $key => $NXB)
+        @foreach($NPH_game as $key => $NPH)
         <div class="col-lg-4">
             <div class="nk-feature-1">
                 <div class="nk-feature-icon">
@@ -365,9 +365,9 @@
                 </div>
                 <div class="nk-feature-cont">
                    
-                        <li><a href="{{URL::to('/nen-tang/'.$NXB->communication_id)}}"> <span class="pull-right"></span>{{$NXB->communication_name}}</a></li>
+                        <li><a href="{{URL::to('/nen-tang/'.$NPH->communication_id)}}"> <span class="pull-right"></span>{{$NPH->communication_name}}</a></li>
                     
-                    <h4 class="nk-feature-title text-main-1"><a href="{{URL::to('/nen-tang/'.$NXB->communication_id)}}">Xem Tất Cả</a></h4>
+                    <h4 class="nk-feature-title text-main-1"><a href="{{URL::to('/nen-tang/'.$NPH->communication_id)}}">Xem Tất Cả</a></h4>
                 </div>
             </div>
         </div>
@@ -380,18 +380,18 @@
         <div class="col-lg-8">
             <!-- START: Products -->
             <div class="row vertical-gap">
-             @foreach( $category_by_id as $key => $book)   
+             @foreach( $category_by_id as $key => $game)   
                 <div class="col-md-6">
                     <div class="nk-product-cat">
-                        <a class="nk-product-image" href="{{URL::to('/chi-tiet-san-pham/'.$book->Book_id)}}">
-                            <img src="{{asset('public/uploadimage/'.$book->Book_image)}}" height="350" width="200" alt="" />
+                        <a class="nk-product-image" href="{{URL::to('/chi-tiet-san-pham/'.$game->Game_id)}}">
+                            <img src="{{asset('public/uploadimage/'.$game->Game_image)}}" height="350" width="200" alt="" />
                         </a>
                         <div class="nk-product-cont">
-                            <h3 class="nk-product-title h5"><a href="{{URL::to('/chi-tiet-san-pham/'.$book->Book_id)}}">{{$book->Book_name}}</a></h3>
+                            <h3 class="nk-product-title h5"><a href="{{URL::to('/chi-tiet-san-pham/'.$game->Game_id)}}">{{$game->Game_name}}</a></h3>
                             <div class="nk-gap-1"></div>
                             <div class="nk-product-rating" data-rating="5"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="far fa-star"></i></div>
                             <div class="nk-gap-1"></div>
-                            <div class="nk-product-price">{{number_format($book->Book_price).' '.'VNĐ'}}</div>
+                            <div class="nk-product-price">{{number_format($game->Game_price).' '.'VNĐ'}}</div>
                             <div class="nk-gap-1"></div>
                             
                         </div>
@@ -426,7 +426,7 @@
     </div>
 </div>
 <div class="nk-widget nk-widget-highlighted">
-    @foreach($cate_book as $key => $cate)
+    @foreach($cate_game as $key => $cate)
     <h4 class="nk-widget-title"><span><span class="text-main-1">Thể Loại</span> </span></h4>
     <div class="nk-widget-content">
         <ul class="nk-widget-categories">
@@ -443,12 +443,12 @@
     <div class="nk-widget-content">
         @foreach($price_game as $key => $pricegame)
         <div class="nk-widget-post">
-            <a href="{{URL::to('/chi-tiet-san-pham/'.$pricegame->Book_id)}}" class="nk-post-image">
-                <img src="{{asset('public/uploadimage/'.$pricegame->Book_image)}}" height="350" width="200" alt="" />
+            <a href="{{URL::to('/chi-tiet-san-pham/'.$pricegame->Game_id)}}" class="nk-post-image">
+                <img src="{{asset('public/uploadimage/'.$pricegame->Game_image)}}" height="350" width="200" alt="" />
             </a>
-            <h3 class="nk-post-title"><a href="{{URL::to('/chi-tiet-san-pham/'.$pricegame->Book_id)}}">{{$pricegame->Book_name}}</a></h3>
+            <h3 class="nk-post-title"><a href="{{URL::to('/chi-tiet-san-pham/'.$pricegame->Game_id)}}">{{$pricegame->Game_name}}</a></h3>
             <div class="nk-product-rating" data-rating="4"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="far fa-star"></i></div>
-            <div class="nk-product-price">{{number_format($pricegame->Book_price).' '.'VNĐ'}}</div>
+            <div class="nk-product-price">{{number_format($pricegame->Game_price).' '.'VNĐ'}}</div>
         </div>
         @endforeach
         
@@ -494,7 +494,7 @@
                 <form action="{{URL::to('/search-game')}}" class="nk-form nk-form-style-1" method="POST">
                     {{csrf_field()}}
                     <input type="text"  name="keywords_submit" class="form-control" placeholder="Nhập Từ Khóa" autofocus>
-                    <input type="submit" style="margin-top: 0 ; color: #000" name="search_book" class="btn btn-primary btn-sm" value="Tìm Kiếm">
+                    <input type="submit" style="margin-top: 0 ; color: #000" name="search_game" class="btn btn-primary btn-sm" value="Tìm Kiếm">
                 </form>
             </div>
         </div>
@@ -533,7 +533,7 @@
                             <div class="nk-gap"></div>
 
                             <ul class="nk-social-links-2">
-                                <li><a class="nk-social-facebook" href="#"><span class="fab fa-facebook"></span></a></li>
+                                <li><a class="nk-social-facegame" href="#"><span class="fab fa-facegame"></span></a></li>
                                 <li><a class="nk-social-google-plus" href="#"><span class="fab fa-google-plus"></span></a></li>
                                 <li><a class="nk-social-twitter" href="#"><span class="fab fa-twitter"></span></a></li>
                             </ul>
