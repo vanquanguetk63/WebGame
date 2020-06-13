@@ -39,7 +39,7 @@ class CartController extends Controller
     public function show_cart(){
       $cate_game = DB::table('tbl_category_product')->orderby('category_id')->get();
       $communication_game = DB::table('table_communication')->orderby('communication_id')->get();
-      $new_game = DB::table('table_Game')->orderby('Game_id','desc')->limit(4)->get();
+      $new_game = DB::table('table_game')->orderby('Game_id','desc')->limit(4)->get();
         return view('pages.cart.cart')->with('cate_game',$cate_game)->with('communication_game',$communication_game)->with('new_game',$new_game); 
     }
 
