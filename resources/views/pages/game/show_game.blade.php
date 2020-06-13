@@ -497,7 +497,7 @@
         @foreach($price_game as $key => $pricegame)
         <div class="nk-widget-post">
             <a href="{{URL::to('/chi-tiet-san-pham/'.$pricegame->Game_id}}" class="nk-post-image">
-                <img src="https://webgamebtl.herokuapp.com/public/uploadimage/'.$pricegame->Game_image" height="350" width="200" alt="" />
+                <img src="https://webgamebtl.herokuapp.com/public/uploadimage/{{$pricegame->Game_image}}" height="350" width="200" alt="" />
             </a>
             <h3 class="nk-post-title"><a href="{{URL::to('/chi-tiet-san-pham/'.$pricegame->Game_id)}}">{{$pricegame->Game_name}}</a></h3>
             <div class="nk-product-rating" data-rating="4"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="far fa-star"></i></div>
