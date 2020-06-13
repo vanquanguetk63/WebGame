@@ -386,7 +386,7 @@
                 <div class="col-md-6">
                     <div class="nk-product-cat">
                         <a class="nk-product-image" href="{{URL::to('/chi-tiet-san-pham/'.$game->Game_id}}">
-                            <img src="https://webgamebtl.herokuapp.com/public/uploadimage/{{$game->Game_image)}}" height="350" width="200" alt="" />
+                            <img src="'https://webgamebtl.herokuapp.com/public/uploadimage/'.$game->Game_image" height="350" width="200" alt="" />
                         </a>
                         <div class="nk-product-cont">
                             <h3 class="nk-product-title h5"><a href="{{URL::to('/chi-tiet-san-pham/'.$game->Game_id)}}">{{$game->Game_name}}</a></h3>
