@@ -9,6 +9,7 @@
                         </header>
                         <div class="panel-body">
                            
+                           
                             <div class="position-center">
                                 <form role="form" action="{{URL::to('/save-category-product')}}" method="post">
                                         {{ csrf_field() }}

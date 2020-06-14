@@ -63,8 +63,14 @@ class GameController extends Controller
             return Redirect::to('all-game');
             }
             $data['Game_image'] = '';
+            if ($data['Game_name']==NULL || $data['Game_desc']==NULL || $data['Game_content']==NULL ||$data['Game_price']==NULL || $data['Game_status']==NULL   ){
+                return Redirect::to('add-game');
+            }else{
                 DB::table('table_game')->insert($data);
                 return Redirect::to('all-game');
+            }
+
+            
         
     }
 

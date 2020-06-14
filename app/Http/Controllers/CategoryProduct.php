@@ -23,9 +23,14 @@ class CategoryProduct extends Controller
     public function save_category_product(Request $request){
     	$data = array();
     	$data['category_name'] = $request->category_name;
-    
-    	DB::table('tbl_category_product')->insert($data);
-    	return Redirect::to('all-category-product');
+        if ($data['category_name']==NULL){
+                Session::put('message_add_category-product','Hãy Thêm Đầy Đủ');
+                return Redirect::to('add-category-product');
+            }else{
+                DB::table('tbl_category_product')->insert($data);
+                return Redirect::to('all-category-product');
+            }
+    	
     }
 
     public function edit_category_product($category_product_id){

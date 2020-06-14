@@ -8,6 +8,7 @@
                             Thêm Game
                         </header>
                         <div class="panel-body">
+                          
                            
                             <div class="position-center">
                                 <form role="form" action="{{URL::to('/save-game')}}" method="post" enctype="multipart/form-data">
