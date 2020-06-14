@@ -86,12 +86,6 @@
         <div class="nk-contacts-right">
             <ul class="nk-contacts-icons">
                 
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#modalSearch">
-                        <span class="fa fa-search"></span>
-                    </a>
-                </li>
-                
                 
                 <?php
                                     
@@ -407,13 +401,13 @@
             -->
             <aside class="nk-sidebar nk-sidebar-right nk-sidebar-sticky">
                 <div class="nk-widget">
+<div class="nk-widget">
     <div class="nk-widget-content">
-        <form action="#" class="nk-form nk-form-style-1" novalidate="novalidate">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Type something...">
-                <button class="nk-btn nk-btn-color-main-1"><span class="ion-search"></span></button>
-            </div>
-        </form>
+       <form action="{{URL::to('/search-game')}}" class="nk-form nk-form-style-1" method="POST">
+                    {{csrf_field()}}
+                    <input type="text"  name="keywords_submit" class="form-control" placeholder="Nhập Từ Khóa" autofocus>
+                    <input type="submit" style="margin-top: 0 ; color: #000" name="search_game" class="btn btn-danger" value="Tìm Kiếm">
+       </form>
     </div>
 </div>
 <div class="nk-widget nk-widget-highlighted">
@@ -469,29 +463,6 @@
 
     
 
-    
-        <!-- START: Search Modal -->
-<div class="nk-modal modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="ion-android-close"></span>
-                </button>
-
-                <h4 class="mb-0">Tìm Kiếm</h4>
-
-                <div class="nk-gap-1"></div>
-                <form action="{{URL::to('/search-game')}}" class="nk-form nk-form-style-1" method="POST">
-                    {{csrf_field()}}
-                    <input type="text"  name="keywords_submit" class="form-control" placeholder="Nhập Từ Khóa" autofocus>
-                    <input type="submit" style="margin-top: 0 ; color: #000" name="search_game" class="btn btn-primary btn-sm" value="Tìm Kiếm">
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- END: Search Modal -->
     
 
     

@@ -147,13 +147,6 @@
                 
             </a>
         </li> -->
-        
-
-
-
-
-
-
 
         <?php
             $user_id = Session::get('user_id');

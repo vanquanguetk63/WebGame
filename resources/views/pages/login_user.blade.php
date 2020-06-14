@@ -393,12 +393,10 @@
         <!-- END: Billing Details -->
 
         
-        <div class="nk-gap-2"></div>
-         <li><a href="{{URL::to('/register-user')}}">Chưa Có Tài Khoản ? Đăng Ký</a></li>
-       
-
-        
-
+    <div class="nk-gap-2"></div>
+        <li><a href="{{URL::to('/register-user')}}">Chưa Có Tài Khoản ? Đăng Ký</a></li>
+        <p>Tài khoản: test@gmail.com </p>    
+        <p>Mật khẩu: 123456 </p>   
         
     </div>
 </div>
