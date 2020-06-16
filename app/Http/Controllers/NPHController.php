@@ -60,5 +60,6 @@ class NPHController extends Controller
             
             $price_game = DB::table('table_game')->orderby('Game_price')->limit(3)->get();
             return view('pages.communication.communicationHome')->with('cate_game',$cate_game)->with('NPH_game',$NPH_game)->with('NPH_by_id',$NPH_by_id)->with('price_game',$price_game);
+            
     }
 }

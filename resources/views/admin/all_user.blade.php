@@ -7,25 +7,7 @@ B@extends('admin_layout')
       Tất Cả Người Dùng
     </div>
     <div class="row w3-res-tb">
-      <div class="col-sm-5 m-b-xs">
-        <select class="input-sm form-control w-sm inline v-middle">
-          <option value="0">Bulk action</option>
-          <option value="1">Delete selected</option>
-          <option value="2">Bulk edit</option>
-          <option value="3">Export</option>
-        </select>
-        <button class="btn btn-sm btn-default">Apply</button>                
-      </div>
       <div class="col-sm-4">
-      </div>
-      <div class="col-sm-3">
-            <form action="{{URL::to('/tim-kiem-user')}}"  method="POST">
-              {{csrf_field()}}
-            <div class="search_box pull-right">
-              <input type="text" name="keywords_submit" placeholder="Nhập Từ Khóa"/>
-              <input type="submit" style="margin-top: 0 ; color: #000" name="search_book" class="btn btn-primary btn-sm" value="Tìm Kiếm">
-            </div>
-            </form>
       </div>
     </div>
     <div class="table-responsive">
