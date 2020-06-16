@@ -439,7 +439,7 @@
                             <img src="https://webgamebtl.herokuapp.com/public/uploadimage/{{$relategame->Game_image}}" alt="">
                         </a>
                         <div class="nk-product-cont">
-                            <h3 class="nk-product-title h5"><a href="store-product.html">{{$relategame->Game_name}}</a></h3>
+                            <h3 class="nk-product-title h5"><a href="{{URL::to('/chi-tiet-san-pham/'.$relategame->Game_id)}}">{{$relategame->Game_name}}</a></h3>
                             <div class="nk-gap-1"></div>
                             <div class="nk-product-rating" data-rating="3"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i></div>
                             <div class="nk-gap-1"></div>
