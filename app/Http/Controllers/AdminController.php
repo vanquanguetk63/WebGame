@@ -44,4 +44,8 @@ class AdminController extends Controller
         $manager_user = view('admin.all_user')->with('all_user',$all_user);
         return view('admin_layout')->with('admin.all_user',$manager_user);
     }
+    public function delete_user($user_id){
+        DB::table('table_user')->where('user_id',$user_id)->delete();
+        return Redirect::to('/all-user');
+    }
 }

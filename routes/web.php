@@ -24,6 +24,7 @@ Route::post('/admin-dashboard','AdminController@dashboard');
 Route::get('/dashboard','AdminController@show_dashboard');
 Route::get('/logout','AdminController@log_out');
 Route::get('/all-user','AdminController@all_user');
+Route::get('/delete-user/{user_id}','AdminController@delete_user');
 
 
 
@@ -94,7 +95,6 @@ Route::get('/view-order/{order_id}','CheckoutController@view_order');
 Route::get('/delete-order/{order_id}','CheckoutController@delete_order');
 Route::get('/edit-order-status/{order_id}','CheckoutController@edit_order_status');
 Route::post('/update-order-status/{order_id}','CheckoutController@update_order_status');
-
 
 
 

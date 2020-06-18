@@ -215,5 +215,9 @@ class CheckoutController extends Controller
        
         return Redirect::to('manager-order-user');
     }
+    public function delete_user(){
+        DB::table('table_user')->where('user_id',$user_id)->delete();
+        return Redirect::to('all-user');
+    }
 }
  
