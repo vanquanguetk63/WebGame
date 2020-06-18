@@ -146,14 +146,6 @@ f<!DOCTYPE html>
                 
             </a>
         </li> -->
-        
-
-
-
-
-
-
-
         <?php
             $user_id = Session::get('user_id');
             $ship_id = Session::get('ship_id');
@@ -231,8 +223,7 @@ f<!DOCTYPE html>
                 Giỏ Hàng
                 
             </a>
-        </li>
-                    </ul>
+        </li>  
         </li>
 
         
