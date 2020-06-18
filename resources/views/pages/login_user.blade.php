@@ -327,12 +327,7 @@ f<!DOCTYPE html>
         
         
         <li><span class="fa fa-angle-right"></span></li>
-        
-        
-        
-        
-        
-        
+
         <li><span>Đăng Nhập</span></li>
         
     </ul>
@@ -346,8 +341,7 @@ f<!DOCTYPE html>
 <div class="container">
 
     <div class="nk-store nk-store-checkout">
-        <h3 class="nk-decorated-h-2"><span><span class="text-main-1">Đăng Nhập</span> </span></h3>
-
+        
         <!-- START: Billing Details -->
         <div class="nk-gap"></div>
         <?php

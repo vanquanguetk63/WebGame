@@ -409,7 +409,6 @@
     <h3 class="nk-decorated-h-2"><span><span class="text-main-1">Mới Nhất</h3>
     <div class="nk-gap"></div>
     <div class="row vertical-gap">
-        
         @foreach($new_game as $key => $newgame)
         <div class="col-lg-6">
             <div class="nk-product-cat-2">
